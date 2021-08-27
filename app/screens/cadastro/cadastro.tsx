@@ -1,6 +1,6 @@
 import React, { useState, } from "react";
 import { SafeAreaView, ImageBackground, StyleSheet, Image, View, TextBase, ScrollView } from "react-native";
-import { Button, Card, Paragraph, TextInput, Title, HelperText, Appbar } from "react-native-paper";
+import { Button, Card, Paragraph, TextInput, Title, HelperText, Appbar, } from "react-native-paper";
 // import { HeaderComponent } from "../../components/header/header.component";
 import { registerStyle } from './cadastro_style';
 

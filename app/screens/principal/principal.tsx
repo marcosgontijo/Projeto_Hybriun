@@ -1,27 +1,35 @@
 import React from "react";
 import { SafeAreaView, ImageBackground, StyleSheet, Image, View, TextBase } from "react-native";
-import { Button, Card, Paragraph, TextInput, Title, Chip } from "react-native-paper";
+import { Button, Card, Paragraph, TextInput, Title, Chip, IconButton } from "react-native-paper";
 import { principalStyle } from '../principal/principal_style';
 
-
+const backgroud = './app/assets/background.jpg';
 export const PrincipalScreen = ({ navigation }) => {
 
     return (
 
-        <SafeAreaView style={principalStyle.container}>
-            <Title>BEM-VINDO </Title>
+        <View>
+            <ImageBackground
+                resizeMode='cover'
+                source={require('./backgroud.jpg')}>
 
-            <Title> Conheça os nossos parceiros </Title>
 
-            <TextInput
-                placeholder="Pesquisar o estabelecimento"
-                style={principalStyle.input}>
-            </TextInput>
 
-            <Chip icon="information" onPress={() => console.log('Pressed')}>Example Chip</Chip>
-            <Chip icon="information" onPress={() => console.log('Pressed')}>Example Chip</Chip>
+                <SafeAreaView style={principalStyle.container}>
+                    <Title>BEM-VINDO </Title>
 
-        </SafeAreaView>
+                    <Title> Conheça os nossos parceiros </Title>
+
+                    <TextInput
+                        placeholder="Pesquisar o estabelecimento"
+                        style={principalStyle.input}>
+                    </TextInput>
+
+
+                </SafeAreaView>
+            </ImageBackground >
+
+        </View>
 
 
     );

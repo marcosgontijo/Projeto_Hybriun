@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, ImageBackground } from "react-native";
 
+const imgb1 = './assets/backgroud.png';
+
 export const loginStyle = StyleSheet.create({
 
     container: {
@@ -15,6 +17,7 @@ export const loginStyle = StyleSheet.create({
         width: "80%"
     },
     cardButton: {
+        backgroundColor: "#fff",
         margin: 45,
         marginLeft: 0,
         marginRight: 0,

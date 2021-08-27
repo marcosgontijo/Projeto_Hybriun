@@ -1,18 +1,16 @@
 import React from "react";
-import { SafeAreaView, ImageBackground, StyleSheet, View, TextBase, Image } from "react-native";
+import { SafeAreaView, ImageBackground, StyleSheet, View, Image } from "react-native";
 import { Button, Card, Paragraph, TextInput, Title, HelperText } from "react-native-paper";
 import { loginStyle } from './login_style';
 
-const imgb = './assets/backgroud.png';
-const logo = './assets/logo_small.png';
+const backgroud = './assets/backgroud.jpg';
 export const LoginScreen = ({ navigation }) => {
 
     return (
         <SafeAreaView style={loginStyle.container}>
-
             <View style={loginStyle.view}>
                 <Card>
-                    <Card.Content>
+                    <Card.Content style={loginStyle.cardButton}>
                         <Paragraph>Bem-Vindo </Paragraph>
 
 
@@ -21,7 +19,7 @@ export const LoginScreen = ({ navigation }) => {
                         <TextInput label="Email"
                             placeholder="Digite o seu e-mail"
                             keyboardType="email-address"
-                            style={loginStyle.cardButton}>
+                        >
                         </TextInput>
 
                         <TextInput
@@ -42,11 +40,13 @@ export const LoginScreen = ({ navigation }) => {
                             mode="contained"
                             onPress={() => navigation.navigate('RegisterScreen')}>Cadastra-se
                         </Button>
+
                     </Card.Content>
                 </Card>
-
             </View>
+
         </SafeAreaView>
+
 
     );
 }
