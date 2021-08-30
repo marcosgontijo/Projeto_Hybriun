@@ -1,10 +1,10 @@
 import React, { useState, } from "react";
-import { SafeAreaView, ImageBackground, StyleSheet, Image, View, TextBase, ScrollView } from "react-native";
-import { Button, Card, Paragraph, TextInput, Title, HelperText, Appbar, } from "react-native-paper";
+import { SafeAreaView, ImageBackground, Image, View, ScrollView } from "react-native";
+import { Button, Card, Paragraph, TextInput, Title, Appbar, } from "react-native-paper";
 // import { HeaderComponent } from "../../components/header/header.component";
 import { registerStyle } from './cadastro_style';
 
-//Tentei usar as dependencias do TextInputMask, para fazer a mask do campos de input, não encaixou de forma certa, mesmo mexendo no style do cadastro, por isso ficou desativado 
+//Tentei usar as dependencias do TextInputMask, para fazer a mask dos campos que recebem text do usuario, não encaixou de forma certa, mesmo mexendo no style do cadastro, por isso ficou desativado 
 import { TextInputMask } from 'react-native-masked-text';
 
 const imgb1 = './assets/backgroud.png';

@@ -9,26 +9,16 @@ export const PrincipalScreen = ({ navigation }) => {
     return (
 
         <View>
-            <ImageBackground
-                resizeMode='cover'
-                source={require('./backgroud.jpg')}>
+            <SafeAreaView style={principalStyle.container}>
+                <Title>BEM-VINDO </Title>
 
+                <Title> Conheça os nossos parceiros </Title>
 
-
-                <SafeAreaView style={principalStyle.container}>
-                    <Title>BEM-VINDO </Title>
-
-                    <Title> Conheça os nossos parceiros </Title>
-
-                    <TextInput
-                        placeholder="Pesquisar o estabelecimento"
-                        style={principalStyle.input}>
-                    </TextInput>
-
-
-                </SafeAreaView>
-            </ImageBackground >
-
+                <TextInput
+                    placeholder="Pesquisar o estabelecimento"
+                    style={principalStyle.input}>
+                </TextInput>
+            </SafeAreaView>
         </View>
 
 
